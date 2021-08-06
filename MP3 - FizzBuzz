@@ -1,0 +1,25 @@
+//Divisível por 3 ==> Fizz
+//Divisível por 5 ==> Buzz
+//Divisível por 3 e 5 ==> FizzBuzz
+//Não é divisível por 3 ==> entrada
+// Não é um número ==> 'não é um Número'
+
+fizzBuzz(3);
+function fizzBuzz(numero){
+  if (typeof numero !== 'number'){
+    console.log('Não é um Número');
+  }  
+  if (numero % 3 === 0 && numero % 5 === 0){
+    console.log('FizzBuzz');
+  }
+  if (numero % 3 === 0){
+    console.log('Fizz');
+  }
+  if (numero % 5 === 0){
+    console.log('Buzz');
+  }
+  else{
+    console.log(numero)
+  }
+
+}
