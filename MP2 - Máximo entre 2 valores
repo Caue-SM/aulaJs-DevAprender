@@ -1,0 +1,7 @@
+// Escreva uma função que use dois números e retorne o maior valor entre eles:
+
+maiorValor(123,12);
+function maiorValor (a, b){
+  let maior = a > b ? a : b;
+  console.log(maior);
+}
