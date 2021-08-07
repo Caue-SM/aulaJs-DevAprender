@@ -2,3 +2,19 @@
 // 1 ponto a cada 5km
 // Math.Floor()
 // mais que 12 pontos --> Carteira suspensa
+
+verificarVelocidade(82);
+
+function verificarVelocidade(veloc){
+  //Definir velocidade máxima
+  let limite = 70;
+  let veloc2 = (veloc - limite)/5;
+
+  if(veloc <= limite){
+    console.log('Velocidade Permitida!');
+  }
+  else{
+    let pontos = Math.floor(veloc2);
+    console.log('Pontos: '+pontos);
+  }
+}
