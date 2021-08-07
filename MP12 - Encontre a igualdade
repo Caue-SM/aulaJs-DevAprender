@@ -1,0 +1,24 @@
+// Exercício Igualdade de objetos
+// (até a linha 24 está errado)
+
+function endereco(rua, cidade, cep){
+  this.rua = rua,
+  this.cidade = cidade,
+  this.cep = cep
+}
+
+const endereco1 = new endereco('a', 'b', 'c');
+const endereco2 = new endereco('a', 'b', 'c');
+
+// Comparar valores de 2 objetos
+function saoIguais(endereco1,endereco2){
+  let var1 = exibirEndereco(endereco1);
+  console.log(var1);
+}
+
+// Passar parâmetros na função
+function exibirEndereco(object){
+  for(let chave in object){
+    console.log(object[chave]);
+  }
+}
